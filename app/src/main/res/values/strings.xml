@@ -1,0 +1,17 @@
+<resources>
+    <!-- Title for the application. -->
+    <string name="app_name">Musical Structure</string>
+
+    <!-- Category name for English songs -->
+    <string name="category_english_songs">English songs</string>
+
+    <!-- Category name for Dutch songs -->
+    <string name="category_dutch_songs">Dutch songs</string>
+
+    <!-- Category name for Swedish songs -->
+    <string name="category_swedish_songs">Swedish songs</string>
+
+    <!-- Label name for Now Playing Activity -->
+    <string name="now_playing_page">Now Playing</string>
+
+</resources>

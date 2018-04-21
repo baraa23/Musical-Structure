@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/redback"
+    tools:ignore="ExtraText">
+
+    //Linear Layout for Now Playing Activity
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".NowPlaying">
+
+        //click to go back to music library.
+
+        <ImageView
+            android:id="@+id/library_button"
+            android:layout_width="@dimen/width_height_library_button"
+            android:layout_height="@dimen/width_height_library_button"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/library" />
+
+        //song art image
+
+        <ImageView
+            android:id="@+id/image_song"
+            android:layout_width="@dimen/Width_height_now_playing_song_art"
+            android:layout_height="@dimen/Width_height_now_playing_song_art"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="26dp" />
+
+        //TextView for song name.
+
+        <TextView
+            android:id="@+id/songg_namee"
+            style="@style/NowPlayingSongAndArtist"
+            android:textSize="30sp"
+            tools:text="Song Name" />
+
+        //TextView for artist name.
+
+        <TextView
+            android:id="@+id/artist_naamee"
+            style="@style/NowPlayingSongAndArtist"
+            android:layout_marginTop="8dp"
+            android:textSize="20sp"
+            tools:text="Song Artist" />
+
+        //Control buttons.
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal">
+
+            // Play button
+
+            <ImageView
+                android:id="@+id/play_button"
+                style="@style/controlButtons"
+                android:src="@drawable/play" />
+
+            // Pause button
+
+            <ImageView
+                android:id="@+id/pause_button"
+                style="@style/controlButtons"
+                android:src="@drawable/pause" />
+
+            // Stop button
+
+            <ImageView
+                android:id="@+id/stop_button"
+                style="@style/controlButtons"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/stop" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

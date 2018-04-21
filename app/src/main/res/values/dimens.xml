@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Height of each list item -->
+    <dimen name="list_item_height">88dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="song_art_list_item_width">100dp</dimen>
+    <dimen name="song_name_item_list_size">30sp</dimen>
+    <dimen name="artist_name_item_list_size">24sp</dimen>
+    <dimen name="margin_left_control_buttons">16dp</dimen>
+    <dimen name="Width_height_now_playing_song_art">200dp</dimen>
+    <dimen name="width_height_library_button">50dp</dimen>
+</resources>

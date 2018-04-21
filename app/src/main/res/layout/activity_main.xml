@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MainActivityLinear"
+    tools:context="com.example.android.musicalstructure.MainActivity">
+
+    <!-- TextView for English songs -->
+    <TextView
+        android:id="@+id/english_songs"
+        style="@style/CategoryStyle"
+        android:text="@string/category_english_songs" />
+
+    <!-- TextView for Dutch songs -->
+    <TextView
+        android:id="@+id/dutch_songs"
+        style="@style/CategoryStyle"
+        android:text="@string/category_dutch_songs" />
+
+    <!-- TextView for Swedish songs -->
+    <TextView
+        android:id="@+id/swedish_songs"
+        style="@style/CategoryStyle"
+        android:text="@string/category_swedish_songs" />
+
+
+</LinearLayout>
