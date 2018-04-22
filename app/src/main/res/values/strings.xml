@@ -14,4 +14,51 @@
     <!-- Label name for Now Playing Activity -->
     <string name="now_playing_page">Now Playing</string>
 
+    <!-- Strings for English Songs Activity -->
+    <string name="song1">Cheap Thrills</string>
+    <string name="artist1">Sia</string>
+    <string name="song2">Flashlight</string>
+    <string name="artist2">Jessie J</string>
+    <string name="song3">Panda</string>
+    <string name="artist3">Desiigner</string>
+    <string name="song4">Maps</string>
+    <string name="artist4">Maroon 5</string>
+    <string name="song5">Closer</string>
+    <string name="artist5">The Chainsmokers</string>
+
+    <!-- Strings for Dutch Songs Activity -->
+    <string name="song1d">Habiba</string>
+    <string name="artist1d">Boef</string>
+    <string name="song2d">Mi No Lob</string>
+    <string name="artist2d">Broederliefde</string>
+    <string name="song3d">Op en Neer</string>
+    <string name="artist3d">F1rstman</string>
+    <string name="song4d">Tempo</string>
+    <string name="artist4d">Sevn Alias, Boef</string>
+    <string name="song5d">Energie</string>
+    <string name="artist5d">Ronnie Flex</string>
+
+    <!-- Strings for Swedish Songs Activity -->
+    <string name="song1se">Din soldat</string>
+    <string name="artist1se">Albin</string>
+    <string name="song2se">En sista gång</string>
+    <string name="artist2se">Albin</string>
+    <string name="song3se">Jag Sa Till Dig</string>
+    <string name="artist3se">Abidaz</string>
+    <string name="song4se">Råknas</string>
+    <string name="artist4se">Abidaz</string>
+    <string name="song5se">Helt Seriöst</string>
+    <string name="artist5se">Kaliffa</string>
+    <string name="art_of_the_song_playing">art of the song playing</string>
+    <string name="music_library_button">Music Library button</string>
+    <string name="play_button_des">Play button</string>
+    <string name="pause_button_des">Pause button</string>
+    <string name="stop_button_des">Stop button</string>
+
+    <!-- Strings for control buttons Toast -->
+    <string name="play_toast">Play</string>
+    <string name="pause_toast">Pause</string>
+    <string name="stop_toast">Stop</string>
+
+
 </resources>

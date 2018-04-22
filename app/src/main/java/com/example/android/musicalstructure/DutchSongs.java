@@ -18,11 +18,11 @@ public class DutchSongs extends AppCompatActivity {
 
         //Create an array with songs name and artist
         final ArrayList<Songs> songs = new ArrayList<Songs>();
-        songs.add(new Songs("Habiba", "Boef", R.drawable.habiba));
-        songs.add(new Songs("Mi No Lob", "Broederliefde", R.drawable.minolop));
-        songs.add(new Songs("Op en Neer", "F1rstman", R.drawable.openneer));
-        songs.add(new Songs("Tempo", "Sevn Alias, Boef", R.drawable.tempo));
-        songs.add(new Songs("Energie", "Ronnie Flex", R.drawable.energie));
+        songs.add(new Songs(getString(R.string.song1d), getString(R.string.artist1d), R.drawable.habiba));
+        songs.add(new Songs(getString(R.string.song2d), getString(R.string.artist2d), R.drawable.minolop));
+        songs.add(new Songs(getString(R.string.song3d), getString(R.string.artist3d), R.drawable.openneer));
+        songs.add(new Songs(getString(R.string.song4d), getString(R.string.artist4d), R.drawable.tempo));
+        songs.add(new Songs(getString(R.string.song5d), getString(R.string.artist5d), R.drawable.energie));
 
         // Create an {@link SongAdapter}, whose data source is a list of {@link Songs}. The
         // adapter knows how to create list items for each item in the list.
@@ -42,7 +42,7 @@ public class DutchSongs extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(DutchSongs.this, NowPlaying.class);
-                intent.putExtra("Example Item", songs.get(position));
+                intent.putExtra(Constants.EXAMPLE_ITEM, songs.get(position));
 
                 startActivity(intent);
 

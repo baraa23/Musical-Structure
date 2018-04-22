@@ -9,7 +9,12 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class NowPlaying extends AppCompatActivity {
+public class NowPlaying extends AppCompatActivity implements View.OnClickListener {
+
+    private ImageView mPlay;
+    private ImageView mPause;
+    private ImageView mStop;
+    private ImageView mLibrary;
 
 
     @Override
@@ -17,56 +22,29 @@ public class NowPlaying extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_now_playing);
 
-        ImageView mPlay;
-        ImageView mPause;
-        ImageView mStop;
+
         mPlay = findViewById(R.id.play_button);
         mPause = findViewById(R.id.pause_button);
         mStop = findViewById(R.id.stop_button);
-        ImageView mLibrary = findViewById(R.id.library_button);
+        mLibrary = findViewById(R.id.library_button);
 
         // set OnClickListener on Library button in NowPlaying activity.
-        mLibrary.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the library ImageView is clicked on.
-            @Override
-            public void onClick(View view) {
-                Intent libraryIntent = new Intent(NowPlaying.this, MainActivity.class);
-                startActivity(libraryIntent);
-            }
-        });
+        mLibrary.setOnClickListener(this);
 
         // set OnClickListener on Play button in NowPlaying activity.
-        mPlay.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the Play ImageView is clicked on.
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(NowPlaying.this, "Play", Toast.LENGTH_SHORT).show();
-            }
-        });
+        mPlay.setOnClickListener(this);
 
         // set OnClickListener on Pause button in NowPlaying activity.
-        mPause.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the Pause ImageView is clicked on.
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(NowPlaying.this, "Pause", Toast.LENGTH_SHORT).show();
-            }
-        });
+        mPause.setOnClickListener(this);
 
         // set OnClickListener on Stop button in NowPlaying activity.
-        mStop.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the Stop ImageView is clicked on.
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(NowPlaying.this, "Stop", Toast.LENGTH_SHORT).show();
-            }
-        });
+        mStop.setOnClickListener(this);
 
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         Intent intent = getIntent();
-        Songs exampleItem = intent.getParcelableExtra("Example Item");
+        Songs exampleItem = intent.getParcelableExtra(Constants.EXAMPLE_ITEM);
 
         int songArt = exampleItem.getImageSongArt();
         String songName = exampleItem.getSongName();
@@ -87,5 +65,27 @@ public class NowPlaying extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         onBackPressed();
         return true;
+    }
+
+    @Override
+    public void onClick(View v) {
+
+        if (v.equals(mPlay)) {
+            Toast.makeText(NowPlaying.this, getString(R.string.play_toast), Toast.LENGTH_SHORT).show();
+        }
+
+        if (v.equals(mPause)) {
+            Toast.makeText(NowPlaying.this, getString(R.string.pause_toast), Toast.LENGTH_SHORT).show();
+        }
+
+        if (v.equals(mStop)) {
+            Toast.makeText(NowPlaying.this, getString(R.string.stop_toast), Toast.LENGTH_SHORT).show();
+        }
+
+        if (v.equals(mLibrary)) {
+            Intent libraryIntent = new Intent(NowPlaying.this, MainActivity.class);
+            startActivity(libraryIntent);
+        }
+
     }
 }

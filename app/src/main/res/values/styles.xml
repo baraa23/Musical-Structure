@@ -21,10 +21,10 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/list_item_height</item>
         <item name="android:gravity">center_vertical</item>
-        <item name="android:padding">16dp</item>
+        <item name="android:padding">@dimen/padding_category_name</item>
         <item name="android:textColor">@android:color/white</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:textSize">30sp</item>
+        <item name="android:textSize">@dimen/text_size_category_name</item>
         <item name="android:background">@drawable/banner</item>
         <item name="android:textAppearance">?android:textAppearanceMedium</item>
     </style>
@@ -43,8 +43,8 @@
     </style>
 
     <style name="controlButtons">
-        <item name="android:layout_width">0dp</item>
-        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_width">@dimen/control_buttons_width_style</item>
+        <item name="android:layout_height">@dimen/control_buttons_height_style</item>
         <item name="android:layout_weight">1</item>
         <item name="android:layout_marginLeft">@dimen/margin_left_control_buttons</item>
     </style>
@@ -54,6 +54,31 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_gravity">center_horizontal</item>
         <item name="android:textColor">@color/text_color</item>
+    </style>
+
+    <style name="controlButtonsLinearLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">@dimen/margin_top_control_buttons</item>
+
+    </style>
+
+    <style name="listItemLinearLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/back_color</item>
+        <item name="android:layout_marginBottom">@dimen/margin_bottom_linear_list_item</item>
+
+    </style>
+
+    <style name="listItemLinearLayoutSub">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingRight">@dimen/padding_list_item_LinearLayout</item>
+        <item name="android:paddingLeft">@dimen/padding_list_item_LinearLayout</item>
+
     </style>
 
 </resources>
